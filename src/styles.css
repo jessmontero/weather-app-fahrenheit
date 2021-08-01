@@ -52,7 +52,7 @@ small {
 
 .weather-app-container {
   max-width: 520px;
-  margin: 20px auto;
+  margin: 28px auto;
 }
 
 #weather-app {
@@ -186,5 +186,9 @@ div .change-units {
   }
   .location-button {
     padding: 0px;
+  }
+
+  div .main-image {
+    margin-left: 0px;
   }
 }
