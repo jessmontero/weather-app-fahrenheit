@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8fba63b40.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+      <div class="weather-app-container">
+      <div id="weather-app">
+        <form id="city-search">
+          <div class="row searchbox">
+            <input type="text" class="col-9 searchfield" autocomplete="off" id="search-input"/>
+            <input type="submit" value="Search" class="col-2 button style-warm style-cold" id="submit-button"/>
+            <button class="col-1 location-button style-warm style-cold" id="current-location-button"><i class="fas fa-map-marker-alt pin"></i></button>
+          </div>
+        </form>
+      <div class="current-temperature">
+      <div class="row">
+        <div class="col-7 city">
+        <h1 id="city"></h1>
+        <h2 id="conditions"></h2>
+        </div>
+        <div class="col-5 last-updated">
+          <p>Last Updated - <span id="day-time"></span></p>
+        </div>
+      </div>
+      <div class="row weather-data">
+        <div class="col-5 main-temperature">
+          <span class="temperature" id="temperature"></span>
+          <span class="degrees">°C</span>
+        </div>
+        <div class="col-3 main-image-container my-auto">
+          <img src="" alt="" id="icon" class="main-image">
+        </div>
+        <div class="col-4 specific-data my-auto">
+          <ul>
+            <li>Feels Like: <span id="feels-like"></span>°</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>mph</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="forecast-container" id="forecast">
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+        <small><a href="https://github.com/jessmontero/new-weather-app" target="_blank">Open-source code</a> by Jess Montero</small>
+        </div>
+        <div class="col-6 change-units">
+          <small><a href="https://dreamy-lamport-fd81c3.netlify.app/">Prefer Celsius</a>?</small>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+    
+</body>
+</html>

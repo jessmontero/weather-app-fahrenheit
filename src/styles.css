@@ -1,0 +1,190 @@
+body {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+p {
+  font-size: 12px;
+  text-align: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: underline;
+  color: #9b9b9b;
+}
+
+a:visited {
+  color: #9b9b9b;
+}
+
+a:hover {
+  color: #797979;
+}
+
+small {
+  color: #9b9b9b;
+}
+
+.weather-app-container {
+  max-width: 520px;
+  margin: 20px auto;
+}
+
+#weather-app {
+  padding: 30px 22px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.forecast-container {
+  margin: 8px 0 5px;
+}
+
+.forecast-container li {
+  text-align: center;
+  line-height: 36px;
+}
+
+.weather-data {
+  margin-top: 15px;
+}
+
+input,
+button {
+  padding: 7px;
+  background-color: white;
+  border: 1px solid rgb(245, 245, 245);
+  color: #9b9b9b;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  border: 1px solid #dadada;
+}
+
+.searchfield {
+  border-radius: 4px 0 0 4px;
+  box-shadow: inset 1px 2px 1px 1px rgba(199, 199, 199, 0.2);
+}
+
+button {
+  border-radius: 0 4px 4px 0;
+}
+
+.button {
+  border-radius: 0;
+}
+
+.location-button,
+.button {
+  transition: all 200ms ease-in-out;
+}
+
+.style-warm {
+  color: #f8906d;
+}
+
+.style-warm:hover {
+  background: #f46d6c;
+  border: 1px solid #f46d6c;
+  color: white;
+}
+
+.style-cold {
+  color: #71c1a6;
+}
+
+.style-cold:hover {
+  background: #439998;
+  border: 1px solid #439998;
+  color: white;
+}
+
+.temperature {
+  font-size: 66px;
+  line-height: 1;
+}
+
+.degrees {
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  bottom: 32px;
+  left: -3px;
+}
+
+.searchbox {
+  padding: 0 18px 5px;
+}
+
+div .main-image {
+  width: 55px;
+  margin-left: 6px;
+}
+
+.main-image-container {
+  padding: 0;
+}
+
+.city {
+  padding: 8px 0 0 18px;
+}
+
+.main-temperature {
+  padding: 0 0 0 18px;
+}
+
+.specific-data,
+.last-updated {
+  padding: 0 18px 0 0;
+}
+
+.specific-data li,
+.max-min-temp {
+  line-height: 18px;
+  font-size: 14px;
+}
+
+div .change-units {
+  text-align: right;
+}
+
+@media (max-width: 520px) {
+  #weather-app {
+    padding: 30px 14px 10px;
+  }
+  .button {
+    padding: 0px;
+  }
+  .location-button {
+    padding: 0px;
+  }
+}
